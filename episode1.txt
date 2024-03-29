@@ -1,0 +1,27 @@
+1. **Emmet**:
+   - Emmet is a toolkit for web developers that greatly improves HTML and CSS workflow. It allows you to write HTML and CSS code using shortcuts and abbreviations, which are then expanded into complete HTML or CSS code snippets. Emmet abbreviations are designed to be easy to remember and can significantly speed up coding.
+
+2. **Difference between a Library and Framework**:
+   - A **library** is a collection of pre-written code that you can use in your own projects. It provides specific functionality that you can call upon as needed. You have control over when and how you use the library's functions.
+   - A **framework**, on the other hand, provides a structure for your code and dictates the flow of control. It often includes a set of rules and conventions that you need to follow when developing your application. With a framework, you build your application within the framework's structure, and the framework takes care of certain aspects of your application, such as managing the flow of data and controlling the execution of code.
+
+3. **CDN (Content Delivery Network)**:
+   - A CDN is a network of distributed servers that deliver web content to users based on their geographic location. CDNs cache static content, such as images, CSS files, and JavaScript files, on servers located closer to the user, which reduces the time it takes to load web pages. CDNs help improve website performance, reliability, and scalability by distributing content across multiple servers and minimizing latency.
+
+4. **Why is React known as React?**:
+   - React is known as React because of its main concept of "reactive" user interfaces. It allows developers to create interactive user interfaces by efficiently updating and rendering only the components that have changed in response to data or user actions. The name "React" reflects this core concept of reacting to changes in data and automatically updating the user interface accordingly.
+
+5. **`crossorigin` in script tag**:
+   - The `crossorigin` attribute in the script tag is used when loading scripts from external sources, such as a CDN or a different domain. It specifies how the browser should handle requests for the script's content based on the CORS (Cross-Origin Resource Sharing) policy. Possible values for the `crossorigin` attribute include "anonymous" and "use-credentials".
+
+6. **Difference between React and ReactDOM**:
+   - **React** is a JavaScript library for building user interfaces, primarily focused on creating reusable UI components and managing the state of those components. It provides the core functionality for defining components, handling component lifecycle, and managing component state.
+   - **ReactDOM** is a package that provides DOM-specific methods that are required for interacting with the DOM in React applications. ReactDOM is used to render React components to the DOM, update the DOM in response to changes in component state or props, and handle events from the DOM.
+
+7. **Difference between react.development.js and react.production.js files via CDN**:
+   - `react.development.js` is used during development and includes additional warnings and debug information to aid developers in identifying potential issues in their React code. It is larger in size and provides a better development experience.
+   - `react.production.js` is optimized for production use and is smaller in size compared to the development version. It does not include the extra warnings and debug information, making it suitable for deploying React applications in production environments where file size and performance are critical.
+
+8. **async and defer**:
+   - **async**: When the `async` attribute is added to a script tag, it tells the browser to download the script file asynchronously while continuing to parse the HTML document. The script will be executed as soon as it's downloaded, potentially interrupting the parsing of the HTML document.
+   - **defer**: When the `defer` attribute is added to a script tag, it tells the browser to download the script file asynchronously but defer its execution until after the HTML document has been fully parsed. Scripts with the `defer` attribute will execute in the order they appear in the document.
