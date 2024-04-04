@@ -1,1 +1,18 @@
 package.json is configuration for npm
+there are two type of dependencies we can install one is dev dependencies which is used for while developing other is normal dependency which can be used in production .
+ Parcel simplifies the process of building and bundling web applications, allowing developers to focus more on writing code and less on configuring build tools.here parcel is "parcel": "^2.12.0" here ^ is called caret and tilde for minor and major updates of parcel so, it will automatically updates depends on symbol we give.
+ package.lock.json keeps a record of exact versions of all dependencies.
+ node module  fetches all the code of dependencies from npm . actual data our project need .
+ package.json is the configuration for our project .
+ if we have package and packagelock.json we can generate node modules
+
+ #parcel
+   dev build
+   local servers
+   HMR=hot module replacement
+   uses file watching algorithm - written in c++
+   Faster builds because it is also catching
+   image optimization 
+   minification while production
+   compresses files
+   consistent Hashing
