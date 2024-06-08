@@ -16,3 +16,7 @@ there are two type of dependencies we can install one is dev dependencies which 
    minification while production
    compresses files
    consistent Hashing
+   error handling 
+   Diagnostics
+   Tree shaking - remove unused code 
+   
