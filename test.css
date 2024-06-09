@@ -1,0 +1,226 @@
+Select all CSS
+
+/* Header CSS */
+.Header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  width: auto;
+  background-color: rgb(171, 237, 194);
+  box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+}
+
+img {
+  height: 150px;
+  width: 200px;
+}
+
+.Navitems {
+  padding: 0 10px 0;
+  width: auto;
+  transition: color 0.3s ease;
+}
+
+.Navitems > ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.Navitems > ul > li {
+  padding: 40px 10px 0 0;
+  font-size: large;
+  cursor: pointer;
+}
+
+.search {
+  width: 300px;
+  margin: 20px auto;
+}
+
+.search input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none; /* Remove the default focus outline */
+}
+
+.search input[type="text"]:focus {
+  border-color: rgb(52, 168, 83); /* Change border color on focus */
+}
+
+.btn {
+  display: block;
+  margin: 20px auto; /* Centers the button horizontally with top and bottom margin */
+  padding: 10px 20px; /* Adds padding to the button */
+  background-color: #007bff; /* Example background color */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darken background color on hover */
+}
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.shimmer-card {
+  margin: 20px;
+  width: 200px;
+  height: 400px;
+  background-color: #b6b3b3;
+}
+button {
+  background-color: #007bff; /* Blue */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue */
+}
+
+button:active {
+  background-color: #004080; /* Even darker blue */
+}
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  width: 200px;
+  outline: none;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue */
+  border: none;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Hover and focus styles */
+.search-button:hover,
+.search-button:focus {
+  background-color: #0056b3; /* Darker blue */
+}
+
+.search-input:focus {
+  border-color: #007bff; /* Blue */
+}
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 500px;
+}
+/* CSS for ResContainer */
+.res-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Three cards per row */
+  grid-gap: 20px; /* Add some space between cards */
+  justify-content: center;
+}
+
+.res-card {
+  border: 4px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 450px; /* Set a fixed height for all cards */
+}
+
+.res-card img {
+  width: 100%;
+  height: 50%; /* Adjust the height of the image within the card */
+  object-fit: cover; /* Maintain aspect ratio and fill the entire card */
+}
+
+.card-content {
+  padding: 16px;
+  height: 50%; /* Adjust the height of the content within the card */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.card-content h4 {
+  margin: 8px 0;
+}
+
+.res-card .card-content a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.res-card .card-content a {
+  text-decoration: none !important;
+  color: inherit !important;
+  pointer-events: none; /* Disable pointer events to make the text unselectable */
+  cursor: text !important; /* Set cursor to text */
+}
+/* Style for the menu card container */
+.Menu-Card {
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height to center vertically */
+  background-color: #f8f8f8; /* Light background color */
+  overflow: auto; /* Enable scrolling if content overflows */
+}
+
+/* Style for the list container */
+.Menu-Card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Space between cards */
+}
+
+/* Style for the individual card */
+.Menu-Card li {
+  background-color: #fff; /* White background for the card */
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px; /* Space inside the card */
+  width: 600px; /* Fixed width for the card */
+  text-align: center; /* Centered text */
+  font-family: Arial, sans-serif; /* Font style */
+  font-size: 16px; /* Font size */
+}
+
+/* Add some responsive design */
+@media (max-width: 600px) {
+  .Menu-Card li {
+    width: 90%; /* Full width on small screens */
+  }
+}
+.Head {
+  text-align: center;
+}

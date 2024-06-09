@@ -1,0 +1,3 @@
+Hooks are utility function or JavaScript function
+Custom Hooks are like javascript functions and regualr hooks but it is better to name with startinh of use and you need to return a output ;
+Chunking,code splitting,dynamic budling of code and Lazy Loading , on demand loading .These all are same .

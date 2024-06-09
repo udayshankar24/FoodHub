@@ -1,0 +1,25 @@
+two types of exports
+
+one is 
+
+export default component name
+
+other is 
+
+export const variable=; //Named export 
+
+React Hooks are normal JavaScript utility functions -it gives utility.
+
+-useState()- super powerful state variable in react --whenever state variable updates react will re renders  the components
+-useEffect()
+
+react uses reconciliation algorithm which is also known as react fiber
+
+React is doing efficient dom manipulation because it is having virtual dom then it can find difference between two virtual dom and update ui using diff algorithm.
+
+there are two approaches to fetch the data;
+1.as soons as page loads we can make api call when we get data then we render UI;
+2.as soons as page loads we will render UI now we will make api as soon as we get data from api we will re render the page ;
+In react we will use second approach;
+
+whenever state variable update,react triggers a reconciliation cycle(re-renders component).

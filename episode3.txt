@@ -1,0 +1,45 @@
+react.create element is a object which it renders into a dom then it will become html element 
+babel  is a JavaScript compiler .it takes jsx code and converts the code in a way that js engine understands.
+when we give jsx code babel converte it to react .create element then render on to dom like a html element .
+attributes to jsx you need to give camelcase
+if we want to live
+
+React component
+class component-old 
+Functional component-new
+
+component composition:component inside a component
+const Title = () => <h1>"Namaste React"</h1>;
+
+
+//component composistion
+example :
+example of aarow function also:
+const Title = () => () <h1>"Namaste React"</h1>;
+
+
+//component composistion
+const Heading = () => (
+  <div>
+    <Title />    
+    <h1>"This is functional component" </h1>
+  </div>
+);
+
+crossside attack:whatever inside this {} jsx will sanitize the data if attacker send malicious data
+example :
+const Title = () => (
+  <h1 className="head" tabIndex="5">
+    "Namaste React"
+  </h1>
+);
+
+const data=api.getdata;
+
+const Heading = () => (
+  <div>
+    {data}
+    <h1>"This is functional component" </h1>
+  </div>
+);
+

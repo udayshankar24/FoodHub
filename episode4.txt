@@ -1,0 +1,42 @@
+destucturing the object
+
+instead of this way passing props and calling
+ const ResCard = (props) => {
+  return (
+    <div className="res-card">
+      <img src="https://recipes.net/wp-content/uploads/2023/05/air-fryer-chicken-biryani-recipe_6968eb6ab4a5ae22d136dab86c9ea8af.jpeg" />
+      <h4>{props.resName}</h4>
+      <h4>{props.cusine}</h4>
+      <h4>{props.rating}</h4>
+      <h4>{props.eta}</h4>
+    </div>
+  );
+};
+
+we can do this way also which is destucturing the 
+
+const ResCard = (props) => {
+  const {resName,cusine,rating,eta}=props;  
+  return (
+    <div className="res-card">
+      <img src="https://recipes.net/wp-content/uploads/2023/05/air-fryer-chicken-biryani-recipe_6968eb6ab4a5ae22d136dab86c9ea8af.jpeg" />
+      <h4>{resName}</h4>
+      <h4>{cusine}</h4>
+      <h4>{rating}</h4>
+      <h4>{eta}</h4>
+    </div>
+  );
+};
+
+  <div className="res-container">
+        {restaurantList.map((restaurant) => {
+          return <ResCard key={restaurant.data.id} resData={restaurant} />; //restaurantList is looped using map datastructure and here each restraunt data is returning the a jsx  restaurantcard 
+        })}
+      </div>
+
+
+ this is the way when we dont know no of restraunts data we have then we will loop the each data with the each restaurant card
+
+
+
+

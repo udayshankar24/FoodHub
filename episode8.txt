@@ -1,0 +1,30 @@
+when class based component is called first contructor is executed then render method
+When there is parent class component and two or mor child class component is there this how rendering happen 
+
+   -parent constructor 
+   -parent render 
+   -first child constructor
+   -first child render 
+   -second child constructor 
+   -second child render 
+   -first child component did mount 
+   -second child component did mount 
+   -parent component did mount 
+refer https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+Component did mount is called to make Api calls.Why?
+react first batches the render phases of all then commit phase happen which is component did mount as it is dom updation which is expensive 
+first contructor called and then render is called where basic render will happend on dom then component did mount  will be called so that it will be  easy for update the data from api call on dom. 
+
+Mounting Life Cycle ;
+
+constructor (dummy data);
+render(dummy data);
+<HTML DUMMY DATA >
+Component Did Mount
+<API CALL>
+<this .set state>
+
+Update
+then render with api data.<HTML WITH API DATA> then it will component did Update 
+
+refer https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/

@@ -1,0 +1,27 @@
+Higher order component is a function that takes component returns a component.they are use to enhance the component may be its UI,passing extra we will not chnage the component which we pass.
+
+to read the values of context data in class based components using UserContext.Consumer takes the call back function.
+
+redux is separate library.
+
+Redux Toolkit
+-Install the @reduxjs/tookit and react redux
+-Build our store
+-connect our store with our application
+-Slice(cart slice)
+-dispatch(action)
+-Selector 
+
+Types of Tesing
+-unit testing
+-Integration testing
+-end to end testing or e2e
+
+setting up Testing in our application
+Install react testing library
+install jest 
+installed the babel dependencies
+configured babel
+configured parcel config file to disabel default  babel config
+jest config npx jest --init
+install jsdom library

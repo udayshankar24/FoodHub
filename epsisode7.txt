@@ -1,0 +1,7 @@
+useEffect if the no dependency array that means useeffect is called on every time this compnent render.
+if the dependency array is empty and is available then useEffect is called on initial render and just once .
+if there is dependency array with btnname then useEffect is called when everytime btnname changes .
+Two types of routing
+client side routing:It doest make any network calls to fetch the ex:about.html just replces the component :
+server side routing:It makes the netwrok call and fetches the ex:about.html from server  and rerenders the page
+Single page application:It just the single page application because we just interchange the components via client  side routing.
